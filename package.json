@@ -1,0 +1,24 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "@types/cookie-parser": "^1.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "concurrently": "^8.2.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.2",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "scripts": {
+    "dev": "npm run startDB && NODE_ENV='dev' concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "compose": "tsc && docker-compose up --build -d",
+    "startDB": "docker run --name mongodb -d -p 27017:27017 mongo",
+    "frontend": "cd next-fe && npm i && npm run dev"
+  }
+}

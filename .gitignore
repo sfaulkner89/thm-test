@@ -1,0 +1,4 @@
+/node_modules
+/next-fe/node_modules
+/dist
+*/dist/**

@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
+}
+
+.topline {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  min-width: 500px;
+  margin-bottom: 2rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: darkgray;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.bottomLine {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+}
