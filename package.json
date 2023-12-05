@@ -17,7 +17,7 @@
   },
   "scripts": {
     "dev": "npm run startDB && NODE_ENV='dev' concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "compose": "tsc && docker-compose up --build -d",
+    "compose": "npm i && tsc && docker-compose up --build -d",
     "startDB": "docker run --name mongodb -d -p 27017:27017 mongo",
     "frontend": "cd next-fe && npm i && npm run dev"
   }
